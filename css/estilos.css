@@ -3,3 +3,9 @@ input:focus{
     background-color: yellow;
     color: black;
 }
+.rojo{
+    color: red;    
+}
+.centrar{
+    text-align:center ;
+}

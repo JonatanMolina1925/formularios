@@ -9,18 +9,27 @@
 </head>
 <body>
     <header id="encabezado">
-        <h1>Hola <br>mundo</h1>
+        <h1 class="centrar">Hola <br>mundo</h1>
         <main id="contenido">
-            <h2>Formulario de contacto</h2>
+            <h2 class="rojo centrar">Formulario de contacto</h2>
             <form action="contacto.php" method="get">
                 <!-- <fieldset onmouseover="alert('pasando...')"> -->
                 <fieldset>
                     <legend>Login</legend>
                     <label for="nombre">Escribe tu nombre: </label>
-                    <input type="text" name="nombre" placeholder="Pon tu nombre">
+                    
+                    <input type="text" name="nombre" placeholder="Pon tu nombre" required><span class="rojo">*</span>
                     <br>
-                    <label for="Contra">Contraseña: </label><input type="password" name="contra" id="">
+                    <label for="Contra">Contraseña: </label><input type="password" name="contra" id=""><span class="rojo">*</span>
                     <br>
+                    <label for="email">Correo electrónico: </label><input type="email" required="required"><span class="rojo">*</span>
+                    <br>
+                    <label for="Fecha">Fecha: </label><input type="date" name="Fecha" id="">
+                    <br>
+                    <label for="Semestre">Semestre: </label><input type="number" name="Semestre" size="3" max="12" min="0" step="1" value="0">
+                    <br>
+                    <label for="Comentarios">Comentarios: </label>
+                    <textarea name="Comentarios" id="" cols="30" rows="10" readonly>NO SE MODIFICA.</textarea>
                 </fieldset>
                 <input type="button" value="Presionar" onclick="javascript:alert('presionado')">
                 <input type="submit" value="Enviar">
