@@ -30,7 +30,31 @@
                     <br>
                     <label for="Comentarios">Comentarios: </label>
                     <textarea name="Comentarios" id="" cols="30" rows="10" readonly>NO SE MODIFICA.</textarea>
+                    <br>
+                    <select name="Carrera" id="Carrera" disabled>
+                        <optgroup>
+                            <option value="Mecatronica">Mecatrónica</option>
+                            <option value="MCI Electrónica" selected>Maestría en Ciencias en Ingeniería Electrónica</option>
+                            <option value="MCI Eléctrica">Maestría en Ciencias en Ingeniería Eléctrica</option>
+                            <option value="MC Metalurgía">Maestría en Ciencias en Metalurgía</option>
+                        </optgroup>
+                    </select>
+                    <br>
                 </fieldset>
+                
+                <fieldset>
+                    <legend>CONACyT</legend>
+                    <label for="Beca">¿Tienes beca?</label>
+                    <input type="checkbox" name="Beca" checked>
+                    <br>
+                    <label for="Edo_Civil">Estado Civil</label>
+                    <input type="radio" name="Edo_Civil">Soltero
+                    <input type="radio" name="Edo_Civil">Viudo
+                    <input type="radio" name="Edo_Civil">Casado
+                    <input type="radio" name="Edo_Civil">Divorciado
+                    <br>
+                </fieldset>
+
                 <input type="button" value="Presionar" onclick="javascript:alert('presionado')">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpiar">
