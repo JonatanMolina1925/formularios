@@ -10,8 +10,16 @@
 <body>
     <header id="encabezado">
         <h1 class="centrar">Hola <br>mundo</h1>
+        <script>
+            function mostrar(){
+                mensaje = prompt("Dame tu nombre")
+                alert("Tu nombre es: "+mensaje)
+            }
+
+        </script>
+    </header>
         <main id="contenido">
-            <h2 class="rojo centrar">Formulario de contacto</h2>
+            <h2 class="rojo centrar" onclick="mostrar()">Formulario de contacto</h2>
             <form action="contacto.php" method="get">
                 <!-- <fieldset onmouseover="alert('pasando...')"> -->
                 <fieldset>
@@ -48,10 +56,10 @@
                     <input type="checkbox" name="Beca" checked>
                     <br>
                     <label for="Edo_Civil">Estado Civil</label>
-                    <input type="radio" name="Edo_Civil">Soltero
-                    <input type="radio" name="Edo_Civil">Viudo
-                    <input type="radio" name="Edo_Civil">Casado
-                    <input type="radio" name="Edo_Civil">Divorciado
+                    <input type="radio" name="Edo_Civil" checked value="1">Soltero
+                    <input type="radio" name="Edo_Civil" value="2">Viudo
+                    <input type="radio" name="Edo_Civil" value="3">Casado
+                    <input type="radio" name="Edo_Civil" value="4">Divorciado
                     <br>
                 </fieldset>
 
@@ -60,6 +68,5 @@
                 <input type="reset" value="Limpiar">
             </form>
         </main>
-    </header>
 </body>
 </html>
